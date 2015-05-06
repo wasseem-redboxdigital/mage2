@@ -1,0 +1,34 @@
+{
+    "name": "wasseem-redboxdigital/mage2",
+    "type": "library",
+    "description": "testing the new magento 2",
+    "license": "MIT",
+    "authors": [
+                {
+                    "name": "Khayrattee Wasseem",
+                    "email": "wasseem.khayrattee@redboxdigital.com",
+                    "homepage": "http://redboxdigital.com"
+                }
+    ],
+        "require": {
+            "magento/magento2ce":"0.74.0-beta7"
+        },
+        "autoload": {
+                    "psr-4": {
+                        "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+                        "Magento\\Setup\\": "setup/src/Magento/Setup/"
+                    }
+                },
+        "minimum-stability": "alpha",
+                "prefer-stable": true,
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "http://packages.magento.com/"
+                    },
+                        {
+                                "type": "vcs",
+                                "url": "https://github.com/magento/magento2.git"
+                        }
+                ]
+}
